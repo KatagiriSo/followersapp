@@ -1,0 +1,27 @@
+<% provide(:title, "show") %>
+
+<section class="container">
+
+<div class="row">
+ <p>名前 <%= @usr.name %></p>
+<div class="col-sm-3" style="background-color: white;">
+<p>フォロー数 <%= @usr.follows.count %> </p>
+</div>
+
+<div class="col-sm-3" style="background-color: white;">
+<p>  フォロワー数 <%= @usr.followers.count %></p>
+</div>
+
+<button type="button" class="btn btn-default">つぶやく</button>
+</div>
+
+</section>
+
+<section class="container">
+  <!-- Bootstrapのグリッドシステムclass="row"で開始 -->
+  <div class="row">
+    <!-- グリッドシステムとは：合計12分割 -->
+    <div class="col-sm-6" style="background-color: red;">赤</div>
+    <div class="col-sm-3" style="background-color: yellow;">黄色</div>
+  </div>
+</section>

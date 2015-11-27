@@ -1,0 +1,106 @@
+<!-- タイトル設定-->
+<% provide(:title, "うぇーい") %>
+
+
+
+<p>うぇーい</p>
+<%= @msg %>
+<p>パラメータ
+<%= @para %>
+</p>
+
+<div class="container bg-info">
+container
+</div>
+
+<div class="container-fluid bg-info">
+container-fluid
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-2 bg-info">col-xs-2</div>
+    <div class="col-xs-6 bg-success">col-xs-6</div>
+    <div class="col-xs-2 bg-warning">col-xs-2</div>
+    <div class="col-xs-2 bg-danger">col-xs-2</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-sm-6 col-md-2 bg-info my-media-1"> 1</div>
+    <div class="col-xs-3 col-sm-2 col-md-2 bg-success my-media-2"> 2</div>
+    <div class="col-xs-3 col-sm-2 col-md-2 bg-warning my-media-3"> 3</div>
+    <div class="col-xs-3 col-sm-2 col-md-6 bg-danger my-media-4"> 4</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-5 bg-info">col-xs-5</div>
+    <div class="col-xs-offset-1 col-xs-6 bg-success">col-xs-6</div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6 bg-danger">
+      col-xs-6
+      <div class="row">
+        <div class="col-xs-3 bg-info">col-xs-3</div>
+        <div class="col-xs-9 bg-success">col-xs-9</div>
+      </div>
+    </div>
+    <div class="col-xs-6 bg-warning">
+      col-xs-6
+      <div class="row">
+        <div class="col-xs-3 bg-info">col-xs-3</div>
+        <div class="col-xs-9 bg-success">col-xs-9</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-2 col-xs-push-4 bg-danger">1</div>
+    <div class="col-xs-2 bg-info">2</div>
+    <div class="col-xs-2 col-xs-pull-4 bg-success">3</div>
+    <div class="col-xs-2 bg-warning">4</div>
+  </div>
+</div>
+
+<h1>H1 Bootstrap入門 <small>Secondary text</small></h1>
+<h2>H2 Bootstrap入門 <small>Secondary text</small></h2>
+<h3>H3 Bootstrap入門 <small>Secondary text</small></h3>
+
+<p class="lead">Bootstrap 入門へようこそ</p>
+<p>Bootstrap は・・・</p>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name2" class="control-label col-sm-2">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" id="name2" class="form-control">
+    </div>
+  </div>
+  <input type="button" value="OK" class="col-sm-offset-2">
+</form>
+
+<form>
+  <label class="checkbox-inline">
+    <input type="checkbox" name="cb1">CB1
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" name="cb2">CB2
+  </label>
+</form>
+
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-info">Info</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-link">Link</button>
