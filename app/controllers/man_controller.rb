@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class ManController < ApplicationController
   def show
   end
@@ -9,22 +10,22 @@ class ManController < ApplicationController
     render :json => @men
 #    render "man/all"
   end
-  
-  
+
+
   # プロフィール
   def show
-    
+
     @id = params[:id]
     isJSON = params[:json]
     @usr = Man.find(@id)
-    
+
     if isJSON == "true" then
         render :json => @usr
     else
         render "man/show"
     end
-    
-    
+
+
   end
 
 

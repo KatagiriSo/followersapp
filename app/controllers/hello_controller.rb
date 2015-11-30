@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class HelloController < ApplicationController
   def hello
     # テキストを直接表示
