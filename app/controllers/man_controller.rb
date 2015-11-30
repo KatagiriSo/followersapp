@@ -4,11 +4,19 @@ class ManController < ApplicationController
   end
 
   def all
-#    @men = Man.all
-@usr = Man.find(1) #id 1番の取得
-@men = @usr.follows #ユーザのフォローしているもの一覧を出す。
-    render :json => @men
+      
+      isJSON = params[:json]
+
+
+    @men = Man.all
+    #@usr = Man.find(1) #id 1番の取得
+    #@men = @usr.follows #ユーザのフォローしているもの一覧を出す。
+    if isJSON == "true" then
+        render :json => @men
+    else
+        render "man/all"
 #    render "man/all"
+    end
   end
 
 
